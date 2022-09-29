@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="frontend/libraries/bootstrap/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="frontend/libraries/xzoom/xzoom.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;
+    800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,
+    700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="frontend/styles/main.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="container">
+      <nav class="row navbar navbar-expand-lg navbar-light bg-white">
+        <a href="index.html" class="navbar-brand">
+          <img src="frontend/images/logo.png" alt="Logo NOMADS" />
+        </a>
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navb"
+        >
+          <!-- //buat garis humberger -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- collapse untuk responsive mobile -->
+        <div class="collapse navbar-collapse" id="navb">
+          <ul class="navbar-nav ml-auto mr-3">
+            <!-- navbar-nav agar list ke kanan -->
+            <li class="nav-item mx-md-2">
+              <!-- mx untuk koordinat kiri kanan atau horizontal tengah-->
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item mx-md-2">
+              <a href="#" class="nav-link active">Paket Wisata</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                id="navbardrop"
+                data-toggle="dropdown"
+              >
+                Layanan Kami
+              </a>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Link</a>
+                <a href="#" class="dropdown-item">Link</a>
+                <a href="#" class="dropdown-item">Link</a>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Mobile Button -->
+          <form class="form-inline d-sm-block d-md-none">
+            <button class="btn btn-login my-2 my-sm-0 px-4">
+              <!-- px itu padding kiri kanan atau horizontal dan my itu margin atas bawah atau vertical -->
+              <!-- sm untuk layar kecil atau hp, d itu display-->
+              Masuk
+            </button>
+          </form>
+          <!-- Dekstop Button -->
+          <form
+            class="form-inline my-2 my-lg-0 d-none d-md-block"
+            action="login.html"
+          >
+            <button
+              class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4"
+              type="submit"
+            >
+              <!-- px itu padding kiri kanan atau horizontal dan my itu margin atas bawah atau vertical -->
+              Masuk
+            </button>
+          </form>
+        </div>
+      </nav>
+    </div>
+
+    <main>
+      <section class="section-details-header"></section>
+      <section class="section-details-content">
+        <div class="container">
+          <div class="row">
+            <div class="col p-0">
+              <!-- p-o agar colom tidak ada pading -->
+              <nav>
+                <ol class="breadcrumb">
+                  <!-- breadcrum untuk slide dari btrap -->
+                  <li class="breadcrumb-item">Paket Travel</li>
+                  <li class="breadcrumb-item active">Details</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 pl-lg-0">
+              <div class="card card-details">
+                <h1>Borobudur</h1>
+                <p>Magelang</p>
+                <div class="gallery">
+                  <div class="xzoom-container">
+                    <img
+                      src="frontend/images/details-1.jpg"
+                      class="xzoom"
+                      id="xzoom-default"
+                      xoriginal="frontend/images/details-1.jpg"
+                    />
+                    <!-- xoriginal itu dari xzoom untuk tanda gambar asli -->
+                  </div>
+                  <div class="xzoom-thumbs">
+                    <a href="frontend/images/details-1.jpg">
+                      <img
+                        src="frontend/images/details-1s.jpg"
+                        class="xzoom-galery xactive"
+                        width="128"
+                        xpreview="frontend/images/details-1.jpg"
+                      />
+                    </a>
+                    <a href="frontend/images/details-2.jpg">
+                      <img
+                        src="frontend/images/details-2s.jpg"
+                        class="xzoom-galery"
+                        width="128"
+                      />
+                    </a>
+                    <a href="frontend/images/details-3.jpg">
+                      <img
+                        src="frontend/images/details-3s.jpg"
+                        class="xzoom-galery"
+                        width="128"
+                      />
+                    </a>
+                    <a href="frontend/images/details-4.jpg">
+                      <img
+                        src="frontend/images/details-4s.jpg"
+                        class="xzoom-galery"
+                        width="128"
+                      />
+                    </a>
+                    <a href="frontend/images/details-5.jpg">
+                      <img
+                        src="frontend/images/details-5s.jpg"
+                        class="xzoom-galery"
+                        width="128"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div>
+                  <h2>Tentang Wisata</h2>
+                  <p>
+                    Borobudur adalah sebuah candi Buddha yang terletak di
+                    Borobudur, Magelang, Jawa Tengah, Indonesia. Candi ini
+                    terletak kurang lebih 100 km di sebelah barat daya Semarang,
+                    86 km di sebelah barat Surakarta, dan 40 km di sebelah barat
+                    laut Yogyakarta. Candi dengan banyak stupa ini didirikan
+                    oleh para penganut agama Buddha Mahayana sekitar tahun
+                    800-an Masehi pada masa pemerintahan wangsa Syailendra.
+                  </p>
+                  <p>
+                    Borobudur adalah candi atau kuil Buddha terbesar di dunia,
+                    sekaligus salah satu monumen Buddha terbesar di dunia.
+                  </p>
+                  <div class="features row">
+                    <div class="col-md-4">
+                      <img
+                        src="frontend/images/ic_event.png"
+                        alt=""
+                        class="features-image"
+                      />
+                      <div class="description">
+                        <h3>Acara Unggulan</h3>
+                        <p>Tour de Borobudur</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 border-left">
+                      <img
+                        src="frontend/images/ic_bahasa.png"
+                        alt=""
+                        class="features-image"
+                      />
+                      <div class="description">
+                        <h3>Bahasa Daerah</h3>
+                        <p>Bahasa Jawa</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 border-left">
+                      <!-- border-left garis dari btrap -->
+                      <img
+                        src="frontend/images/ic_foods.png"
+                        alt=""
+                        class="features-image"
+                      />
+                      <div class="description">
+                        <h3>Makanan Khas</h3>
+                        <p>Bakpia</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="card card-details card-right">
+                <h2>Daftar Pemesan</h2>
+                <div class="member my-2">
+                  <img
+                    src="frontend/images/members.png"
+                    class="member-image mr-1"
+                  />
+                </div>
+                <hr />
+                <h2>Informasi Travel</h2>
+                <table class="trip-informations">
+                  <tr>
+                    <th width="50%">Tgl Keberangkatan</th>
+                    <td width="50%" class="text-right">
+                      <!-- text-right agar tabel di kanan -->
+                      22 Aug, 2021
+                    </td>
+                  </tr>
+                  <tr>
+                    <th width="50%">Durasi</th>
+                    <td width="50%" class="text-right">
+                      <!-- text-right agar tabel di kanan -->
+                      2H 1M
+                    </td>
+                  </tr>
+                  <tr>
+                    <th width="50%">Tipe</th>
+                    <td width="50%" class="text-right">
+                      <!-- text-right agar tabel di kanan -->
+                      Paket Private Tour
+                    </td>
+                  </tr>
+                  <tr>
+                    <th width="50%">Harga</th>
+                    <td width="50%" class="text-right">
+                      <!-- text-right agar tabel di kanan -->
+                      Rp. 300k / Orang
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="join-container">
+                <a
+                  href="checkout.html"
+                  class="btn btn-block btn-join-now mt-3 py-2"
+                >
+                  Login atau Register untuk Bergabung
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section-footer mt-5 mb-4 border-top">
+      <div class="container pt-5 pb-5">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-12 col-lg-3">
+                <!-- colom di dekstop yg dibagi 4 -->
+                <h5>PAKET WISATA</h5>
+                <ul class="list-unstyled">
+                  <!-- list-unstyled agar tidak ada bulet -->
+                  <li><a href="#">Paket Private Tour</a></li>
+                  <li><a href="#">Paket Group Tour</a></li>
+                  <li><a href="#">Paket Honeymoon</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-3">
+                <!-- colom di dekstop yg dibagi 4 -->
+                <h5>PELANGGAN</h5>
+                <ul class="list-unstyled">
+                  <!-- list-unstyled agar tidak ada bulet -->
+                  <li><a href="#">Cara Pemesanan</a></li>
+                  <li><a href="#">Metode Pembayaran</a></li>
+                  <li><a href="#">Syarat dan Ketentuan</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-3">
+                <!-- colom di dekstop yg dibagi 4 -->
+                <h5>BLOG</h5>
+                <ul class="list-unstyled">
+                  <!-- list-unstyled agar tidak ada bulet -->
+                  <li><a href="#">Gallery</a></li>
+                  <li><a href="#">Tentang Kami</a></li>
+                  <li><a href="#">Kontak Kami</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-3">
+                <!-- colom di dekstop yg dibagi 4 -->
+                <h5>KONTAK KAMI</h5>
+                <ul class="list-unstyled">
+                  <!-- list-unstyled agar tidak ada bulet -->
+                  <li><a href="#">Kotagede, Yogyakarta</a></li>
+                  <li><a href="#">Indonesia</a></li>
+                  <li><a href="#">0821 - 2222 - 8888</a></li>
+                  <li><a href="#">support@riwisata.id</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <!-- container-fluid untuk jarak kanan kiri full -->
+        <div
+          class="row border-top justify-content-center align-items-center pt-4"
+        >
+          <div class="col-auto text-gray-500 font-weight-light">
+            2021 Copyright Riwisata • All rights reserved • Made in Banjarnegara
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="frontend/libraries/jquery/jquery-3.6.0.min.js"></script>
+    <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="frontend/libraries/retina/retina.min.js"></script>
+    <script src="frontend/libraries/xzoom/xzoom.min.js"></script>
+    <script>
+      $(function () {
+        $(".xzoom, .xzoom-gallery").xzoom({
+          zoomWidth: 500,
+          title: false,
+          tint: "#333",
+          Xoffset: 15,
+        });
+      });
+    </script>
+  </body>
+</html>

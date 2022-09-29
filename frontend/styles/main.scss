@@ -1,0 +1,575 @@
+body {
+  background-color: #fff;
+  font-family: "Assistant", sans-serif;
+}
+
+// Navbar
+.navbar-brand {
+  img {
+    max-height: 40px;
+  }
+}
+
+.btn-navbar-right {
+  margin-top: -10px !important;
+  // importan untuk menimpa style bawaan bootstrap krn penting
+  height: 70px;
+  margin-bottom: -8px !important;
+  margin-right: -18px !important;
+  border-radius: 0;
+}
+
+.navbar-light {
+  .navbar-nav {
+    .nav-link {
+      color: #003a2d;
+
+      &.active {
+        font-weight: bold;
+        color: #003a2d !important;
+      }
+    }
+  }
+}
+
+.btn-login {
+  background-color: #003a2d;
+  color: #fff;
+
+  &:hover {
+    color: #fff;
+    background-color: #014d3c;
+  }
+}
+
+// Header
+header {
+  padding: 180px 0 165px; // jarak header ke layar
+  margin-top: -70px;
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  // cover untuk presisi gambar meski di besar kecilkan
+
+  h1,
+  p {
+    color: #fff;
+  }
+
+  h1 {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    font-size: 50px;
+  }
+  p {
+    font-size: 22px;
+  }
+
+  .btn-pilih-wisata {
+    background-color: #ff9900;
+    color: #fff;
+
+    &:hover {
+      background-color: #ffab2c;
+      color: #fff;
+    }
+  }
+}
+
+//Statistics
+.section-stats {
+  margin-top: -50px;
+
+  .stats-detail {
+    padding-top: 15px;
+    background-color: #fff;
+    padding-left: 40px;
+  }
+
+  h2,
+  p {
+    color: #003a2d;
+  }
+  h2 {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+
+// Popular
+.section-popular {
+  min-height: 540px;
+  background-color: #003a2d;
+  margin-top: -50px;
+  margin-bottom: -230px;
+
+  .section-popular-heading {
+    margin-top: 150px;
+
+    h2,
+    p {
+      color: #fff;
+    }
+
+    h2 {
+      font-family: "Playfair Display", serif;
+      font-weight: bold;
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+.section-popular-content {
+  .section-popular-travel {
+    .card-travel {
+      min-height: 380px;
+      background-color: rgb(119, 119, 119);
+      color: #fff;
+      padding: 30px;
+      background-size: cover;
+      margin-bottom: 20px;
+
+      .travel-country {
+        font-size: 18px;
+        color: #fff;
+      }
+
+      .travel-location {
+        font-size: 26px;
+        color: #fff;
+      }
+
+      .travel-button {
+        .btn-travel-details {
+          background-color: #ff9900;
+          color: #fff;
+
+          &:hover {
+            background-color: #ffab2c;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-networks {
+  background-color: #fff;
+  margin-top: -170px;
+  //margin-top: -170px; untuk menimpa section popular
+  padding-top: 240px;
+  padding-bottom: 50px;
+
+  h2,
+  p {
+    color: #003a2d;
+  }
+  h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    font-size: 40px;
+  }
+  p {
+    font-size: 18px;
+  }
+  img {
+    max-width: 100%;
+    // max-width: 100%; agar gambar tidak melebihi besar row
+  }
+}
+
+// Testimoni
+.section-testimonials-heading {
+  background: linear-gradient(
+    #fff 0%,
+    #fafafa 13.39%,
+    rgba(223, 223, 223, 0.73) 100%
+  );
+  padding-top: 50px;
+  min-height: 506px;
+
+  h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #003a2d;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+.section-testimonials-content {
+  margin-top: -300px;
+  padding-bottom: 50px;
+
+  .card-testimonial {
+    padding: 40px 20px 10px;
+    border-radius: 11px;
+    margin-bottom: 20px;
+
+    .testimonial-content {
+      min-height: 380px;
+    }
+
+    h3 {
+      font-size: 22px;
+    }
+
+    .testimonials {
+      font-size: 26px;
+      color: #6e6e6e;
+      font-weight: 200;
+      min-height: 60px;
+    }
+
+    .trip-to {
+      font-weight: normal;
+      font-size: 22px;
+      color: #6e6e6e;
+    }
+
+    hr {
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+  }
+
+  .btn-butuh-bantuan {
+    background-color: #f2f2f2;
+    color: #777777;
+
+    &:hover {
+      background-color: #f8f7f7;
+      color: #777777;
+    }
+  }
+
+  .btn-pilih-wisata {
+    background-color: #ff9900;
+    color: #fff;
+
+    &:hover {
+      background-color: #ffab2c;
+      color: #fff;
+    }
+  }
+}
+
+.section-footer {
+  a {
+    color: #003a2d;
+  }
+}
+
+// DETAILS
+.section-details-header {
+  min-height: 310px;
+  background: #c3fff2;
+  margin-top: -68px;
+}
+
+.section-details-content {
+  margin-top: -210px;
+  min-height: 100vh;
+  // 100 vh untuk layar isi kosong
+  //viewport hegiht yg layar 100% dekstop
+
+  .breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .breadcrumb-item {
+    color: #003a2d;
+
+    &.active {
+      font-weight: bold;
+      color: #003a2d;
+    }
+  }
+
+  .card-details {
+    padding: 30px;
+    border-radius: 11px;
+
+    h1 {
+      font-size: 26px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #777777;
+    }
+
+    h3 {
+      font-weight: 300;
+      font-size: 14px;
+      color: #003a2d;
+    }
+
+    .trip-informations {
+      th {
+        font-weight: 400;
+        font-size: 18px;
+        color: #003a2d;
+      }
+
+      td {
+        font-weight: 300;
+        font-size: 18px;
+        color: #777777;
+      }
+      .text-green {
+        color: #003a2d;
+        font-weight: bold;
+      }
+
+      .text-orange {
+        color: #ff9900;
+        font-weight: bold;
+      }
+    }
+
+    .payment-instructions {
+      font-weight: 300;
+      font-size: 14px;
+      color: #777777;
+    }
+
+    .bank {
+      .bank-item {
+        h3 {
+          font-size: 18px;
+          color: #003a2d;
+          margin-bottom: 0;
+        }
+
+        p {
+          margin-bottom: 0;
+        }
+
+        .description {
+          margin-left: 10px;
+          overflow: hidden; // Klip kiri / tepi kanan konten dalam <div> elemen - jika meluap area konten elemen
+          float: left;
+
+          p {
+            font-family: Assistant;
+            font-weight: normal;
+            font-size: 16px;
+            text-align: left;
+            color: #003a2d;
+          }
+        }
+
+        .bank-image {
+          width: 45px;
+          height: 45px;
+          float: left;
+        }
+      }
+    }
+
+    .disclaimer {
+      font-weight: 300;
+      font-size: 14px;
+      color: #777777;
+    }
+
+    // CSS untuk menimpa css gijgo, class bisa
+    // dilihat di inspect element
+    .gj-datepicker {
+      .datepicker {
+        border-right: 0;
+      }
+
+      .input-group-append {
+        .btn {
+          padding-right: 30px;
+        }
+      }
+    }
+
+    .btn-add-now {
+      background-color: #003a2d;
+      color: #fff;
+
+      &:hover {
+        background-color: #014d3c;
+        color: #fff;
+      }
+    }
+  }
+
+  .card-right {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 0;
+  }
+
+  .gallery {
+    //untuk menimpa css xzoom
+    .xzoom-container {
+      display: block; // agar full gambar
+
+      .xzoom {
+        width: 100%;
+        box-shadow: none;
+        margin-bottom: 10px;
+      }
+
+      .xactive {
+        border: 4px solid #1abc9c;
+        //border solid agar garis tebal
+        box-shadow: none;
+      }
+    }
+    .xzoom-thumbs {
+      a {
+        text-decoration: none;
+      }
+    }
+    .xzoom-galery {
+      margin: 0 2px 5px;
+    }
+  }
+
+  .features {
+    margin-top: 20px;
+
+    h3 {
+      font-size: 18px;
+      font-weight: 500;
+      color: #003a2d;
+      margin-bottom: 0;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    .features-image {
+      width: 45px;
+      height: 45px;
+      float: left;
+    }
+
+    .description {
+      margin-left: 10px;
+      overflow: hidden;
+      float: left;
+    }
+  }
+
+  .member {
+    .member-image {
+      height: 40px;
+    }
+  }
+
+  .join-container {
+    margin-top: -16px;
+  }
+
+  .btn-join-now {
+    background-color: #ff9900;
+    color: #fff;
+    border-radius: 0;
+
+    &:hover {
+      background-color: #ffab2c;
+      color: #fff;
+    }
+  }
+}
+
+//Succcess
+.section-success {
+  height: 90vh; //viewport-length halaman kosong ada space panjang vertikal
+
+  h1 {
+    font-weight: 600;
+    font-size: 26px;
+    color: #003a2d;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 18px;
+    color: #777777;
+  }
+
+  .btn-home-page {
+    border-radius: 4px;
+    background-color: #003a2d;
+    color: #fff;
+
+    &:hover {
+      background-color: #014d3c;
+      color: #fff;
+    }
+  }
+}
+
+.login-controller {
+  //untuk layar besar
+  @media (min-width: 992px) {
+    background: linear-gradient(90deg, #ffff 60%, #e4e6eb 40%);
+    //90deg atau lurus
+    width: 100vw;
+    height: 100vh;
+    //vh untuk jarak atas dan bawah sama
+  }
+}
+
+.page-login {
+  height: 100vh;
+
+  .btn-login {
+    background-color: #ff9900;
+    color: #fff;
+
+    &:hover {
+      background-color: #ffab2c;
+      color: #fff;
+    }
+  }
+
+  .section-left {
+    h1 {
+      font-family: "Playfair Display";
+      font-weight: bold;
+      font-size: 40px;
+      text-align: left;
+      color: #003a2d;
+    }
+  }
+
+  .section-right {
+    h3 {
+      font-family: Assistant;
+      font-weight: normal;
+      font-size: 14px;
+      text-align: left;
+      margin: 15px 0px 10px;
+    }
+
+    .form-check {
+      margin: 5px 0px 15px;
+    }
+  }
+}

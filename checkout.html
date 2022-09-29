@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="frontend/libraries/bootstrap/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="frontend/libraries/xzoom/xzoom.css" />
+    <link rel="stylesheet" href="frontend/libraries/gijgo/css/gijgo.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;
+    800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,
+    700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="frontend/styles/main.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="container">
+      <nav class="row navbar navbar-expand-lg navbar-light bg-white">
+        <div class="navbar-nav ml-auto mr-auto mr-sm-auto mr-lg-0 mr-md-auto">
+          <!-- ml-auto dan mr-auto, nanti di navbar akan kosong kanan kirinya -->
+          <a class="navbar-brand" href="index.html">
+            <img src="frontend/images/logo.png" alt="" />
+          </a>
+        </div>
+        <ul class="navbar-nav mr-auto d-none d-lg-block">
+          <!-- d-none di mobile hanya logo, hanya muncul didekstop-->
+          <li>
+            <span class="text-muted">
+              <!-- text-muted dr bstrap untuk warna abu -->
+              | &nbsp; Paket Wisata Jogja No 1
+            </span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main>
+      <section class="section-details-header"></section>
+      <section class="section-details-content">
+        <div class="container">
+          <div class="row">
+            <div class="col p-0">
+              <!-- p-o agar colom tidak ada pading -->
+              <nav>
+                <ol class="breadcrumb">
+                  <!-- breadcrum untuk slide dari btrap -->
+                  <li class="breadcrumb-item">Paket Travel</li>
+                  <li class="breadcrumb-item">Details</li>
+                  <li class="breadcrumb-item active">Chekcout</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 pl-lg-0">
+              <div class="card card-details">
+                <h1>Siapa yang Pergi ?</h1>
+                <p>Wisata ke Malioboro, Yogyakarta</p>
+                <div class="attendee">
+                  <table class="table table-responsive-sm text-center">
+                    <!-- tabel responsive di mobile -->
+                    <thead>
+                      <tr>
+                        <td>Foto Profil</td>
+                        <td>Nama</td>
+                        <td>Wa/Telp</td>
+                        <td>Email</td>
+                        <td></td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <img
+                            src="frontend/images/avatar-1.png"
+                            alt="Foto User"
+                            height="60"
+                          />
+                        </td>
+                        <td class="align-middle">Fadel Nur Akhmad</td>
+                        <!-- align-middle untuk text ditengah atas bawah -->
+                        <td class="align-middle">081225677223</td>
+                        <td class="align-middle">fadel@gmail.com</td>
+                        <td class="align-middle">
+                          <a href="#">
+                            <img src="frontend/images/ic_remove.png" alt="" />
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img
+                            src="frontend/images/avatar-2.png"
+                            alt="Foto User"
+                            height="60"
+                          />
+                        </td>
+                        <td class="align-middle">Parjo Raharjo</td>
+                        <!-- align-middle untuk text ditengah atas bawah -->
+                        <td class="align-middle">085766233445</td>
+                        <td class="align-middle">parjo@gmail.com</td>
+                        <td class="align-middle">
+                          <a href="#">
+                            <img src="frontend/images/ic_remove.png" alt="" />
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="member mt-3">
+                  <h2>Tambah Peserta</h2>
+                  <form class="form-inline">
+                    <!-- form-inline dan form-control dari bstrap -->
+                    <label class="sr-only" for="inputUsername">Nama</label>
+                    <!-- sr-only itu screen reader dr bstrap "Nama" tidak muncul di layar-->
+                    <input
+                      type="text"
+                      name="inputUsername"
+                      class="form-control mb-2 mr-sm-2"
+                      id="inputUsername"
+                      placeholder="Username"
+                    />
+                    <label class="sr-only" for="inputTelp">Wa/Telp</label>
+                    <!-- sr-only itu screen reader dr bstrap "Wa/Telp" tidak muncul di layar-->
+                    <input
+                      type="text"
+                      name="inputTelp"
+                      class="form-control mb-2 mr-sm-2"
+                      id="inputTelp"
+                      placeholder="Wa/Telp"
+                    />
+                    <label class="sr-only" for="inputEmail">Email</label>
+                    <input
+                      type="email"
+                      name="inputEmail"
+                      class="form-control mb-2 mr-sm-2"
+                      id="inputEmail"
+                      placeholder="Email"
+                    />
+                    <button type="submit" class="btn btn-add-now mb-2 px-4">
+                      Tambah
+                    </button>
+                  </form>
+                  <h3 class="mt-2 mb-0">Catatan</h3>
+                  <p class="disclaimer mb-0">
+                    Anda hanya dapat mengundang peserta lain yang telah
+                    terdaftar di Riwisata
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="card card-details card-right">
+                <h2>Informasi Checkout</h2>
+                <table class="trip-informations">
+                  <tr>
+                    <th width="50%">Peserta</th>
+                    <td width="50%" class="text-right">2 orang</td>
+                    <!-- text-right agar tabel di kanan -->
+                  </tr>
+                  <tr>
+                    <th width="50%">Harga Tour</th>
+                    <td width="50%" class="text-right">Rp. 300k / orang</td>
+                  </tr>
+                  <tr>
+                    <th width="50%">Total Harga</th>
+                    <td width="50%" class="text-right">Rp. 600.000</td>
+                  </tr>
+                  <tr>
+                    <th width="50%">Total (+Kode Unik)</th>
+                    <td width="50%" class="text-right text-total">
+                      <span class="text-green">Rp. 600,</span>
+                      <span class="text-orange">346</span>
+                    </td>
+                  </tr>
+                </table>
+
+                <hr />
+                <h2>Metode Pembayaran</h2>
+                <p class="payment-instructions">
+                  Harap selesaikan pembayaran Anda sebelum lanjutkan perjalanan
+                  yang indah
+                </p>
+                <div class="bank">
+                  <div class="bank-item pb-3">
+                    <img
+                      src="frontend/images/ic_bank.png"
+                      alt=""
+                      class="bank-image"
+                    />
+                    <div class="description">
+                      <h3>PT Riwisata Tour</h3>
+                      <p>
+                        0881 8829 8800
+                        <br />
+                        Bank Central Asia
+                      </p>
+                    </div>
+                    <div class="clearfix"></div>
+                    <!-- clearfix agar tidak numpuk float disebelah kanan -->
+                  </div>
+                  <div class="bank-item pb-3">
+                    <img
+                      src="frontend/images/ic_bank.png"
+                      alt=""
+                      class="bank-image"
+                    />
+                    <div class="description">
+                      <h3>PT Riwisata Tour</h3>
+                      <p>
+                        0899 8501 7888
+                        <br />
+                        Bank Mandiri
+                      </p>
+                    </div>
+                    <div class="clearfix"></div>
+                    <!-- clearfix agar tidak numpuk float disebelah kanan -->
+                  </div>
+                </div>
+              </div>
+              <div class="join-container">
+                <a
+                  href="success.html"
+                  class="btn btn-block btn-join-now mt-3 py-2"
+                >
+                  Konfirmasi Pembayaran
+                </a>
+              </div>
+              <div class="text-center mt-3">
+                <a href="details.html" class="text-muted">Batal Pesanan</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section-footer mt-5 mb-4 border-top">
+      <div class="container pt-5 pb-5">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-12 col-lg-3">
+                <!-- colom di dekstop yg dibagi 4 -->
+                <h5>PAKET WISATA</h5>
+                <ul class="list-unstyled">
+                  <!-- list-unstyled agar tidak ada bulet -->
+                  <li><a href="#">Paket Private Tour</a></li>
+                  <li><a href="#">Paket Group Tour</a></li>
+                  <li><a href="#">Paket Honeymoon</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-3">
+                <!-- colom di dekstop yg dibagi 4 -->
+                <h5>PELANGGAN</h5>
+                <ul class="list-unstyled">
+                  <!-- list-unstyled agar tidak ada bulet -->
+                  <li><a href="#">Cara Pemesanan</a></li>
+                  <li><a href="#">Metode Pembayaran</a></li>
+                  <li><a href="#">Syarat dan Ketentuan</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-3">
+                <!-- colom di dekstop yg dibagi 4 -->
+                <h5>BLOG</h5>
+                <ul class="list-unstyled">
+                  <!-- list-unstyled agar tidak ada bulet -->
+                  <li><a href="#">Gallery</a></li>
+                  <li><a href="#">Tentang Kami</a></li>
+                  <li><a href="#">Kontak Kami</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-3">
+                <!-- colom di dekstop yg dibagi 4 -->
+                <h5>KONTAK KAMI</h5>
+                <ul class="list-unstyled">
+                  <!-- list-unstyled agar tidak ada bulet -->
+                  <li><a href="#">Kotagede, Yogyakarta</a></li>
+                  <li><a href="#">Indonesia</a></li>
+                  <li><a href="#">0821 - 2222 - 8888</a></li>
+                  <li><a href="#">support@riwisata.id</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <!-- container-fluid untuk jarak kanan kiri full -->
+        <div
+          class="row border-top justify-content-center align-items-center pt-4"
+        >
+          <div class="col-auto text-gray-500 font-weight-light">
+            2021 Copyright Riwisata • All rights reserved • Made in Banjarnegara
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="frontend/libraries/jquery/jquery-3.6.0.min.js"></script>
+    <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="frontend/libraries/retina/retina.min.js"></script>
+    <script src="frontend/libraries/xzoom/xzoom.min.js"></script>
+    <script src="frontend/libraries/gijgo/js/gijgo.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".xzoom, .xzoom-gallery").xzoom({
+          zoomWidth: 500,
+          title: false,
+          tint: "#333",
+          Xoffset: 15,
+        });
+
+        $(".datepicker").datepicker({
+          uiLibrary: "bootstrap4",
+          icons: {
+            rightIcon: '<img src="frontend/images/ic_doe.png" alt="" />',
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
